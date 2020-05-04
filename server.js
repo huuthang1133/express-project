@@ -34,6 +34,8 @@ var cartRoute = require("./routes/cart.route");
 
 var shopRoute = require("./routes/shop.route");
 
+var shopClientRoute = require("./routes/shop-client.route");
+
 var apiTransaction = require('./api/routes/transaction.route');
 
 var apiBook = require('./api/routes/book.route');
@@ -78,6 +80,8 @@ app.use("/transactions", authMiddleware.requireAuth, transRoute);
 app.use('/profile', authMiddleware.requireAuth, profileRoute);
 
 app.use('/shop', authMiddleware.requireAuth, shopRoute);
+
+app.use('/shop', shopClientRoute);
 
 // listen for requests :)
 const listener = app.listen(process.env.PORT, () => {

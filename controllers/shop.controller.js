@@ -99,21 +99,3 @@ module.exports.delete = async function (req,res){
   })
   res.redirect('/shop');   
 }
-
-module.exports.clientIndex = async function (req, res){
-  var id = req.params.id;
-  
-  var page = parseInt(req.query.page) || 1;
-
-  var perPage = 4;
-
-  var begin = (page-1)*perPage;
-
-  var end = page*perPage;
-  
-  var books = User.find({_id: id});
-  res.render('shop/index.pug', {
-    books: books[0].BookInShop,
-    page: page
-  });    
-}

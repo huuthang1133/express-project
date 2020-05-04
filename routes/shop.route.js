@@ -16,8 +16,6 @@ router.get('/update/:id', controllers.updateId);
 
 router.get('/delete/:id', controllers.delete);
 
-router.get('/:id/books', controllers.clientIndex);
-
 router.post('/update/:id', controllers.postUpdateId);
 
 module.exports = router;

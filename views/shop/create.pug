@@ -1,0 +1,12 @@
+extends ../layouts/common.pug
+block content
+  .container
+    h1 New Book
+    form(action="/shop/create", method="POST")
+      .form-group      
+        label Title:
+        input.form-control(type="text", name="title")
+      .form-group             
+      label Description:
+      input.form-control(type="text", name="description")
+      button.btn.btn-primary.mt-3 Create

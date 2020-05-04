@@ -1,0 +1,338 @@
+{
+  "books": [
+    {
+      "title": "Sự lụi tàn của đồng tiền",
+      "description": "Sát thủ kinh tế",
+      "id": "zqEeazF59"
+    },
+    {
+      "title": "Chiến Tranh Tiền Tệ",
+      "description": "Chiến Tranh Tiền Tệ",
+      "id": "RJmFTMT5H"
+    },
+    {
+      "title": "Hỗ Trợ Học Javascript",
+      "description": "Hỗ Trợ Học Javascript",
+      "id": "6V0TYksC8"
+    },
+    {
+      "title": "Hỗ Trợ Boostrap",
+      "description": "Hỗ Trợ Boostrap",
+      "id": "5cLoibpdd"
+    },
+    {
+      "title": "Những kiến thức căn bản của phụ hồ",
+      "description": "Những kiến thức căn bản của phụ hồ",
+      "id": "Il-RGQvn0"
+    },
+    {
+      "title": "Sát thủ kinh tế",
+      "description": "Sát thủ kinh tế",
+      "id": "FRvq6tBEw"
+    },
+    {
+      "id": "5d55b6b3-6623-44f0-89b2-94311d45f496",
+      "title": "Sausage - Breakfast",
+      "description": "suscipit nulla elit ac nulla sed vel enim sit amet"
+    },
+    {
+      "id": "7cac54eb-600a-4a06-8614-6a77bf7bcc72",
+      "title": "Beer - Guiness",
+      "description": "congue eget semper rutrum nulla nunc purus phasellus in felis"
+    },
+    {
+      "id": "3dcb63b4-9b16-4a63-9e3a-9f2fe0530533",
+      "title": "Flavouring - Orange",
+      "description": "vitae ipsum aliquam non mauris morbi non lectus aliquam sit"
+    },
+    {
+      "id": "0a846d89-acf4-450a-bbec-47edd4bdda7e",
+      "title": "Tahini Paste",
+      "description": "faucibus orci luctus et ultrices posuere cubilia curae mauris viverra"
+    },
+    {
+      "id": "4444b724-3845-4de4-8284-523f86cfd152",
+      "title": "Jolt Cola",
+      "description": "vel enim sit amet nunc viverra dapibus nulla suscipit ligula"
+    },
+    {
+      "id": "0bce19ac-b8ce-4824-9b69-963f1fe7c6bf",
+      "title": "Muffin - Blueberry Individual",
+      "description": "nulla sed vel enim sit amet nunc viverra dapibus nulla"
+    },
+    {
+      "id": "0476f519-ae17-49e6-ab83-1539d504170a",
+      "title": "Juice - Ocean Spray Cranberry",
+      "description": "sed interdum venenatis turpis enim blandit mi in porttitor pede"
+    },
+    {
+      "id": "e21ef8bb-1e8f-46c0-8398-1de6a018ab1d",
+      "title": "Trout Rainbow Whole",
+      "description": "pellentesque quisque porta volutpat erat quisque erat eros viverra eget"
+    },
+    {
+      "id": "2ca886f8-ed76-4c8e-97d8-6d3428842830",
+      "title": "Wine - Jaboulet Cotes Du Rhone",
+      "description": "nulla integer pede justo lacinia eget tincidunt eget tempus vel"
+    },
+    {
+      "id": "c07bb930-4713-4ccb-881e-fb4f75ad5407",
+      "title": "V8 Pet",
+      "description": "lectus in est risus auctor sed tristique in tempus sit"
+    },
+    {
+      "id": "824c5eba-663a-4c18-9bbd-c910d725dc08",
+      "title": "Mustard - Seed",
+      "description": "amet eros suspendisse accumsan tortor quis turpis sed ante vivamus"
+    },
+    {
+      "id": "ce4bec1e-a3dd-4df9-b1cc-30dbfb50b9d5",
+      "title": "Beef - Bones, Cut - Up",
+      "description": "proin risus praesent lectus vestibulum quam sapien varius ut blandit"
+    },
+    {
+      "id": "587ae3a8-5570-43a5-aa36-1f6ab294195a",
+      "title": "Crackers - Melba Toast",
+      "description": "ultrices enim lorem ipsum dolor sit amet consectetuer adipiscing elit"
+    },
+    {
+      "id": "377a5864-6091-4c9c-ade3-fca205368aab",
+      "title": "Soup - Campbells, Beef Barley",
+      "description": "vitae quam suspendisse potenti nullam porttitor lacus at turpis donec"
+    },
+    {
+      "id": "87d74a1a-8086-4890-a385-b3ceb8bfd49f",
+      "title": "Pastry - Butterscotch Baked",
+      "description": "consectetuer eget rutrum at lorem integer tincidunt ante vel ipsum"
+    },
+    {
+      "id": "ea5a39d3-9ea4-4e8f-9b65-3ec9a48c7ecb",
+      "title": "Wine - White, Mosel Gold",
+      "description": "imperdiet et commodo vulputate justo in blandit ultrices enim lorem"
+    },
+    {
+      "id": "6862d8fa-80c1-4995-83f7-b582a5963986",
+      "title": "Pears - Bartlett",
+      "description": "lectus suspendisse potenti in eleifend quam a odio in hac"
+    },
+    {
+      "id": "264ebac8-9d42-4368-8c60-48a408dd4d32",
+      "title": "Dc - Frozen Momji",
+      "description": "eget semper rutrum nulla nunc purus phasellus in felis donec"
+    },
+    {
+      "id": "ceb4ef5d-e4ce-475a-bdef-4eae8f66a432",
+      "title": "Hersey Shakes",
+      "description": "lacinia sapien quis libero nullam sit amet turpis elementum ligula"
+    },
+    {
+      "id": "f22816ae-e249-463a-b7da-8405bf523346",
+      "title": "Yukon Jack",
+      "description": "auctor gravida sem praesent id massa id nisl venenatis lacinia"
+    }
+  ],
+  "users": [
+    {
+      "name": "Hữu Thắng",
+      "book": "Chiến Tranh Tiền Tệ",
+      "id": "KtvliN1KD",
+      "email": "vohuuthang9696@gmail.com",
+      "password": "123456",
+      "isAdmin": true
+    },
+    {
+      "name": "Nghia",
+      "book": "Sát thủ kinh tế",
+      "id": "xNov66CTV",
+      "email": "vohuuthang9797@gmail.com",
+      "password": "123456",
+      "avatarUrl": "http://res.cloudinary.com/thang/image/upload/v1587954269/ggd8iebszfjb5ih4of1m.jpg"
+    },
+    {
+      "name": "Ly",
+      "book": "Hỗ Trợ Boostrap",
+      "id": "fz0Roj0wV"
+    },
+    {
+      "name": "Thanh Hien",
+      "book": "Hỗ Trợ Học Javascript",
+      "id": "TUakgSFe1",
+      "email": "vohuuthang9595@gmail.com",
+      "password": "123456"
+    },
+    {
+      "name": "Thang",
+      "book": "Sự lụi tàn của đồng tiền",
+      "id": "Z0HdjV_sK"
+    },
+    {
+      "name": "Tom Conte",
+      "book": "Sự lụi tàn của đồng tiền"
+    }
+  ],
+  "transactions": [
+    {
+      "id": "6vbrvKQ7e",
+      "userId": "KtvliN1KD",
+      "bookId": "RJmFTMT5H"
+    },
+    {
+      "id": "RVV7kvJXa",
+      "userId": "xNov66CTV",
+      "bookId": "FRvq6tBEw"
+    },
+    {
+      "id": "jOnfblM-Y",
+      "userId": "fz0Roj0wV",
+      "bookId": "5cLoibpdd"
+    },
+    {
+      "id": "z0r-ajzZD",
+      "userId": "TUakgSFe1",
+      "bookId": "6V0TYksC8"
+    },
+    {
+      "id": "n5nBU22oF",
+      "userId": "Z0HdjV_sK",
+      "bookId": "zqEeazF59"
+    },
+    {
+      "id": "1WKN8GpQa",
+      "userId": "TUakgSFe1",
+      "bookId": "zqEeazF59"
+    },
+    {
+      "id": "Xr444W8Mfk",
+      "userId": "TUakgSFe1",
+      "bookId": "RJmFTMT5H"
+    },
+    {
+      "id": "7Fcq_eqwLm",
+      "userId": "TUakgSFe1",
+      "bookId": "6V0TYksC8"
+    },
+    {
+      "id": "cM_g6tnnb",
+      "userId": "KtvliN1KD",
+      "bookId": "zqEeazF59"
+    },
+    {
+      "id": "luxKs8uwXg",
+      "userId": "KtvliN1KD",
+      "bookId": "RJmFTMT5H"
+    }
+  ],
+  "arrCookie": [],
+  "avatarUrl": [],
+  "sessions": [
+    {
+      "id": "F2XhDJ8Ev"
+    },
+    {
+      "id": "nJzq0fFTf",
+      "cart": {
+        "zqEeazF59": 1,
+        "RJmFTMT5H": 1,
+        "6V0TYksC8": 1
+      }
+    },
+    {
+      "id": "oI21HiZRE"
+    },
+    {
+      "id": "rqx4q9wt50"
+    },
+    {
+      "id": "9fY8JOY5B"
+    },
+    {
+      "id": "JBvTjfyB6"
+    },
+    {
+      "id": "5gOjIYAN1",
+      "cart": " "
+    },
+    {
+      "id": "cK4BdtDgb"
+    },
+    {
+      "id": "iSl_cND8ay"
+    },
+    {
+      "id": "xAY0xM_Ab"
+    },
+    {
+      "id": "fPTMXlgn2"
+    },
+    {
+      "id": "Ry1huKkmC"
+    },
+    {
+      "id": "WjmnXDX4l"
+    },
+    {
+      "id": "Ke8-afSPv"
+    },
+    {
+      "id": "tbDXtdkWw"
+    },
+    {
+      "id": "tNcEzUx5X"
+    },
+    {
+      "id": "YcvOJ6HSy"
+    },
+    {
+      "id": "CxKIJv5Ib"
+    },
+    {
+      "id": "XvNM8VTK-"
+    },
+    {
+      "id": "81_xmCzwL"
+    },
+    {
+      "id": "dTp1ucoYK"
+    },
+    {
+      "id": "OQivXve5C"
+    },
+    {
+      "id": "3kPBndylJ"
+    },
+    {
+      "id": "-cl4-hU4Z",
+      "cart": {
+        "5eaa3870ebfa2996ed3cd6e8": 1
+      }
+    },
+    {
+      "id": "dniOo95l-"
+    },
+    {
+      "id": "9FNuPXlZb"
+    },
+    {
+      "id": "lA1dkwuUl_"
+    },
+    {
+      "id": "EGEnIOr3Tj"
+    },
+    {
+      "id": "cvpWCuYis"
+    },
+    {
+      "id": "F_0QVd6Fj"
+    },
+    {
+      "id": "XMZc81ybK"
+    },
+    {
+      "id": "W9QxJEWwa"
+    },
+    {
+      "id": "C6wVuBJYM"
+    }
+  ],
+  "wrongLoginCount": []
+}

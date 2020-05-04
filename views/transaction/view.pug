@@ -1,0 +1,17 @@
+extends ../layouts/common.pug
+block content
+  .container
+    h1 Transaction Selected
+    form(method="POST")
+      label(for='book') Choose a book: 
+      select#book(name="book")
+        each book in books
+          option= book.title
+      br
+      br
+      label(for='user') Choose a user: 
+      select#user(name="user")
+        each user in users
+          option= user.name
+      br    
+      button Create

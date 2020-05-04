@@ -1,0 +1,19 @@
+extends ../layouts/common.pug
+block content
+  .container
+    h1  Users
+      p
+        a(href="/users/create") New
+      p
+        a(href="/users/update") Update
+      form(action="/books/search", method="GET")
+        input(type="text", name="q")
+        button Search
+      ul
+        each user in users
+          li
+            span= user.name
+            span  - 
+            span= user.book 
+            span 
+            a(href='/users/delete/'+ user._id) Delete

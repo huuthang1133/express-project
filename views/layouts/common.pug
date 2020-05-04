@@ -1,0 +1,22 @@
+html
+  head
+    link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css")
+    link(rel="icon", href="https://cdn.glitch.com/d71d50fb-c57a-474f-9f24-702712ecd8b2%2Ffavicon.png?v=1587558167358")
+  body
+    nav.navbar.navbar-expand-lg.navbar-light.bg-light
+      a.navbar-brand(href='/') HOME
+      button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarNav', aria-controls='navbarNav', aria-expanded='false', aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      #navbarNav.collapse.navbar-collapse
+        ul.navbar-nav
+          li.nav-item.active
+            a.nav-link(href='/users') Users
+          li.nav-item
+            a.nav-link(href='/books') Books
+          li.nav-item
+            a.nav-link(href='/transactions') Transactions
+          li.nav-item
+            a.nav-link(href='/profile') Profile
+          li.nav-item
+            a.nav-link(href='/shop') My Shop               
+    block content

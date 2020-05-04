@@ -17,10 +17,11 @@ module.exports.clientIndex = async function (req, res){
   var end = page*perPage;
   
   var books = await User.find({_id: id});
-  console.log(books[0].BookInShop);
+  console.log(books);
   res.render('shop/client/index.pug', {
-    books: books[0].BookInShop,
-    page: page
+    books: books[0].BookInShop.slice(begin,end),
+    page: page,
+    id: id
   });    
 }
 

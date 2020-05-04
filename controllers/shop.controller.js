@@ -72,7 +72,6 @@ module.exports.postUpdateId = async function(req,res){
   req.body.description = bookUpdate.description;
   var a = bookInShop.indexOf(bookUpdate);
   bookInShop[a] = req.body;
-  console.log(bookInShop);
   User.update({_id: res.locals._id}, {BookInShop: bookInShop},function(err,doc){
     if (err)
       console.log(err);

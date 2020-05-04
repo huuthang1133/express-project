@@ -17,7 +17,6 @@ module.exports.index = async function(req,res){
 
 module.exports.create = async function(req,res){
   var books = await Book.find();
-  console.log(books);
   res.render('users/create.pug', {
     books: books
   })

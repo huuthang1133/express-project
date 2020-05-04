@@ -20,8 +20,8 @@ block content
     nav(aria-label='Page navigation example')
       ul.pagination
         li.page-item
-          a.page-link(href='/shop?page=' + (page-1)) Previous   
+          a.page-link(href='/shop/' + id + '/books?page=' + (page-1)) Previous   
         li.page-item
-          a.page-link(href='/shop?page=' + page)= page
+          a.page-link(href='/shop/' + id + '/books?page=' + page)= page
         li.page-item
-          a.page-link(href='/shop?page=' + (page + 1)) Next    
+          a.page-link(href='/shop/' + id + '/books?page=' + (page + 1)) Next    

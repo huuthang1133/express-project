@@ -17,6 +17,8 @@ mongoose.connection.on('connected', function(){
   console.log("Mongoose connected !!!");
 })
 
+var port = 3000;
+
 
 var cookieParser = require('cookie-parser');
 
@@ -79,11 +81,12 @@ app.use("/transactions", authMiddleware.requireAuth, transRoute);
 
 app.use('/profile', authMiddleware.requireAuth, profileRoute);
 
-app.use('/shop', authMiddleware.requireAuth, shopRoute);
-
 app.use('/shop', shopClientRoute);
 
+app.use('/shop', authMiddleware.requireAuth, shopRoute);
+
+
 // listen for requests :)
-const listener = app.listen(process.env.PORT, () => {
+const listener = app.listen(port, () => {
   console.log("Your app is listening on port " + listener.address().port);
 });

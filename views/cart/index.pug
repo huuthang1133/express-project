@@ -1,0 +1,17 @@
+extends ../layouts/common
+
+block content
+  .container
+    h1 Tổng số số sách trong giỏ hàng  
+      if sum      
+        span= sum || 0
+    ul
+    if books
+      each book in books
+        if book
+          li
+            span= book.title
+            span    
+            span= book.id
+    form(action="/transactions", method="POST")   
+      button.btn.btn-primary Thuê  

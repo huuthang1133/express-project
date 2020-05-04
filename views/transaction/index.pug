@@ -1,0 +1,15 @@
+extends ../layouts/common.pug
+block content
+  .container
+    h1 Transactions
+    p
+      a(href="/transactions/create") Create
+    ul
+      each tran in trans
+        li
+          span= tran._id
+          span= tran.userId 
+          span= tran.bookId 
+          span 
+            b 
+              a(href="/transactions/" + tran._id + "/complete") isComplete

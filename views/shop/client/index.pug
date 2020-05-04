@@ -1,0 +1,26 @@
+extends ../../layouts/common.pug
+block content
+    form(action="/shop/search", method="GET")
+      .form-group
+        input.form-control(type="text", name="q")
+      button.btn.btn-primary Search
+    h1 Sách hiện có        
+    .row.mb-3
+      each book in books
+        .col-3
+          .card.mb-3
+            img.card-img-top(src="https://loremflickr.com/320/240")
+            .card-body
+              h5.card-title= book.title
+              p.card-text= book.description
+              .d-flex.justify-content-between
+                a.btn.btn-primary(href='/cart/add/' + book._id) Add to cart
+    
+    nav(aria-label='Page navigation example')
+      ul.pagination
+        li.page-item
+          a.page-link(href='/shop?page=' + (page-1)) Previous   
+        li.page-item
+          a.page-link(href='/shop?page=' + page)= page
+        li.page-item
+          a.page-link(href='/shop?page=' + (page + 1)) Next    

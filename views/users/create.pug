@@ -1,0 +1,18 @@
+extends ../layouts/common.pug
+
+block content
+  .container
+    h1 New Users
+    if errors
+      each error in errors
+        .alert.alert-danger= error  
+    form(action="/users/create", method="POST")
+      .form-group
+        label Name
+        input.form-control(type="text", name="name")
+      .form-group
+        label Book
+        select.form-control(name="book")
+          each book in books
+            option= book.title
+      button.btn.btn-primary Create

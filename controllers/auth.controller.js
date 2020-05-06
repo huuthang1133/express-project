@@ -113,6 +113,6 @@ module.exports.postLogin = async function (req, res, next){
     res.cookie('userId', user[0]._id, {
       signed: true
     });
-    res.redirect('/transactions'); 
+    res.redirect('..'); 
   }
 }

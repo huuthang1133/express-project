@@ -1,0 +1,12 @@
+extends ../layouts/common.pug
+block content
+	.container
+		h1 Transactions
+		table(style='width:100%')
+			tr
+				th Người Thuê Sách
+				th Tên Sách
+			each tran in trans
+				tr
+					td= tran.name
+					td= tran.book

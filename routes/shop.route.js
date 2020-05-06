@@ -10,6 +10,8 @@ router.get('/create' ,controllers.create);
 
 router.get('/update', controllers.update);
 
+router.get('/transaction', controllers.transaction);
+
 router.post('/create' ,controllers.postCreate);
 
 router.get('/update/:id', controllers.updateId);

@@ -9,7 +9,8 @@ var userSchema = new Schema({
   password: String,
   avatarUrl: String,
   isAdmin: Boolean,
-  BookInShop: [{ id: String, title: String, description: String }]
+  BookInShop: [{ id: String, title: String, description: String }],
+  transactions: [{id: String, bookId: String, buyerId: String}]
 });
 
 var User = mongoose.model('User', userSchema, 'users');

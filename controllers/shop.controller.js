@@ -98,3 +98,21 @@ module.exports.delete = async function (req,res){
   })
   res.redirect('/shop');   
 }
+
+
+module.exports.transaction = async function(req,res){
+  var user = await User.find({_id: res.locals._id});
+  var bookInShop = user[0].BookInShop;  
+  var transactions = user[0].transactions
+  var convertTrans = []
+  for (var tran of transactions){
+    var name = await User.find({_id: tran.buyerId});
+    var book = bookInShop.find(function(x){
+      return x._id == tran.bookId;
+    });
+    convertTrans.push({name: name[0].name, book: book.title});
+  }
+  res.render('shop/transaction.pug',{
+    trans: convertTrans
+  });
+}

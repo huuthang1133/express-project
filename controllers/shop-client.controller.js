@@ -7,13 +7,6 @@ var User = require('../models/user.model');
 
 var Session = require('../models/session.model');
 
-
-module.exports.shopIndex = async function (req,res,next) {
-  var id = req.params.id;
-  res.locals = id;
-  next();  
-}
-
 module.exports.clientIndex = async function (req, res){
   
   var id = req.params.id;
@@ -64,20 +57,21 @@ module.exports.addToCart = async function (req, res){
 }
 
 module.exports.get = async function(req, res) {
-
+  var userId = req.signedCookies.userId;
   var id = req.params.id;
-
-  // var userId = req.signedCookies.userId;
+  if(!userId){
+    res.redirect('../../../auth/login');
+  }
   var sessionId = req.signedCookies.sessionId;
   var session = await Session.find({_id: sessionId});
+  console.log(session);
   var books = await User.find({_id: id});
   var BookInShop = books[0].BookInShop;
-  var cart = session[0].cart;
-  if(!cart){
+  if(!session[0].cart){
     res.redirect('back');
   }
+  var cart = session[0].cart;  
   var booksInCart = [];
-  console.log(cart);
   var sum = 0;
   for (var book in cart){
     sum += cart[book];
@@ -86,24 +80,20 @@ module.exports.get = async function(req, res) {
     });
     booksInCart.push(bookInCart);
   }
-  console.log(booksInCart);
   res.render('shop/client/cart.pug', {
     sum: sum,
     books: booksInCart,
-    id: res.locals
-  })
+    id: id
+  })     
 }
 
 module.exports.post = async function (req,res){
-  var sessionId = req.signedCookies.sessionId;
   var id = req.params.id;
+  var sessionId = req.signedCookies.sessionId;
   var userId = req.signedCookies.userId;
   var session = await Session.find({_id: sessionId});
   var cart = session[0].cart;
-  var bookHire = [];
-  if(!userId){
-    res.redirect("auth/login");
-  }
+  var bookHire = (await User.find({_id: id}))[0].transactions || [];
   for (var book in cart){
     bookHire.push({buyerId: userId, bookId: book});
     // var newTran = new Trans({buyerId: userId, bookId: book});
@@ -112,16 +102,20 @@ module.exports.post = async function (req,res){
     //     console.log("error")
     //   }
     //   else {
-    //     console.log("success");
+    //     console.log("success");s
     //   }
     // });
-  }
+  };
+  Session.update({_id: sessionId}, {cart: {}},function(err){});
   User.update({_id: id}, {transactions: bookHire},function(err,doc){
     if(err){
       console.log(err)
     }
+    else
+      console.log(doc);
   });
-  var trans = await Trans.find();
+  res.redirect('back');
+  // var trans = await Trans.find();
   // var transeller = 
   // if(!res.locals.isAdmin){
   //   var tranid = await Trans.find({userId: userId}).limit(trans.length);

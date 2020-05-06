@@ -13,14 +13,14 @@ block content
           span 
             b 
               a(href="/transactions/" + tran._id + "/complete") isComplete
-    if transeller
-    ul
-      each tran in trans
-          li
-            span= tran._id
-            span= tran.buyerId 
-            span= tran.bookId 
-            span 
-              b 
-                a(href="/transactions/" + tran._id + "/complete") isComplete      
+    //- if transeller
+    //-   ul
+    //-     each tran in trans
+    //-         li
+    //-           span= tran._id
+    //-           span= tran.buyerId 
+    //-           span= tran.bookId 
+    //-           span 
+    //-             b 
+    //-               a(href="/transactions/" + tran._id + "/complete") isComplete      
 

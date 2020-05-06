@@ -6,7 +6,7 @@ block content
     h1
       a(href="/shop/update") Update
     p
-      a(href="/shop/" + user._id + "/books") Link shop
+      a(href="/shop/" + user._id + "/books", target="_blank") Link shop
     form(action="/shop/search", method="GET")
       .form-group
         input.form-control(type="text", name="q")

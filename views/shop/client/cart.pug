@@ -1,4 +1,4 @@
-extends ../layouts/common
+extends ../../layouts/common
 
 block content
   .container
@@ -13,5 +13,5 @@ block content
             span= book.title
             span    
             span= book.id
-    form(method="POST")   
+    form(action="/cart", method="POST")   
       button.btn.btn-primary Thuê  

@@ -17,7 +17,7 @@ module.exports.index = async function (req,res){
     var drop = (page-1)*perPage
     var books = await User.find({_id: res.locals._id});
     res.render('shop/index.pug', {
-      books: books[0].BookInShop,
+      books: books[0].BookInShop.slice(begin,end),
       page: page,
       user: books[0]
     });        

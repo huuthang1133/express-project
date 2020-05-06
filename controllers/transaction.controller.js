@@ -9,7 +9,6 @@ var User = require('../models/user.model');
 module.exports.index = async function (req,res) {
   if(!res.locals.isAdmin){
     var tranid = await Trans.find({userId: res.locals._id});
-    console.log(tranid);
     // tranid.push(db.get('transactions').find({userId: res.locals.id}).value());
     res.render('transaction/index.pug',{
       trans: tranid

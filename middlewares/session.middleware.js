@@ -11,7 +11,7 @@ module.exports = function (req, res, next){
       signed: true
     })  
     newSession.save()   
-    res.redirect('/books');     
+    res.redirect('back');     
   }
   next();
 }
